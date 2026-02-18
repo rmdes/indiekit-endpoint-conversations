@@ -1,0 +1,24 @@
+{
+  "conversations": {
+    "title": "Conversations",
+    "list": {
+      "title": "Conversations",
+      "empty": "No conversations yet. Interactions from Mastodon, Bluesky, and the web will appear here.",
+      "total": "{{count}} interactions",
+      "lastActivity": "Last activity"
+    },
+    "detail": {
+      "title": "Conversation",
+      "empty": "No interactions for this post yet.",
+      "replies": "Replies",
+      "likes": "Likes",
+      "reposts": "Reposts",
+      "mentions": "Mentions"
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky"
+    }
+  }
+}

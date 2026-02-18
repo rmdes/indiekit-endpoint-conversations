@@ -1,0 +1,49 @@
+{
+  "name": "@rmdes/indiekit-endpoint-conversations",
+  "version": "1.0.0",
+  "description": "Conversation aggregation endpoint for Indiekit. Unified cross-protocol conversation views with Bridgy-primary webmention ingestion and optional direct API polling.",
+  "keywords": [
+    "indiekit",
+    "indiekit-plugin",
+    "indieweb",
+    "conversations",
+    "webmention",
+    "textcasting"
+  ],
+  "homepage": "https://github.com/rmdes/indiekit-endpoint-conversations",
+  "author": {
+    "name": "Ricardo Mendes",
+    "url": "https://rmendes.net"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "locales",
+    "views",
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/rmdes/indiekit-endpoint-conversations/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmdes/indiekit-endpoint-conversations.git"
+  },
+  "dependencies": {
+    "@indiekit/error": "^1.0.0-beta.25",
+    "@indiekit/frontend": "^1.0.0-beta.25",
+    "express": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "masto": "^7.0.0",
+    "@atproto/api": "^0.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
