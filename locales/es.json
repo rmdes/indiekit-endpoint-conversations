@@ -1,0 +1,32 @@
+{
+  "conversations": {
+    "title": "Conversaciones",
+    "dashboard": {
+      "connections": "Conexiones",
+      "connected": "Conectado",
+      "disconnected": "No configurado",
+      "ready": "Listo",
+      "lastPoll": "\u00daltimo sondeo",
+      "lastError": "Error",
+      "itemsCollected": "elementos recopilados",
+      "itemsReceived": "elementos recibidos",
+      "mastodonHint": "Configurar MASTODON_ACCESS_TOKEN y MASTODON_URL para activar",
+      "blueskyHint": "Configurar BLUESKY_IDENTIFIER y BLUESKY_PASSWORD para activar",
+      "webhookTitle": "Webhook / Ingesta",
+      "webhookHint": "Los servicios externos pueden enviar webmentions al punto de ingesta",
+      "stats": "Estad\u00edsticas",
+      "totalItems": "Total de elementos",
+      "replies": "Respuestas",
+      "likes": "Me gusta",
+      "reposts": "Republicaciones",
+      "pollNow": "Sondear ahora",
+      "recentActivity": "Actividad reciente",
+      "empty": "A\u00fan no hay interacciones. Configure las credenciales de la plataforma o env\u00ede webmentions al punto de ingesta."
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky"
+    }
+  }
+}

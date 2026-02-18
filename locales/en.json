@@ -1,19 +1,27 @@
 {
   "conversations": {
     "title": "Conversations",
-    "list": {
-      "title": "Conversations",
-      "empty": "No conversations yet. Interactions from Mastodon, Bluesky, and the web will appear here.",
-      "total": "{{count}} interactions",
-      "lastActivity": "Last activity"
-    },
-    "detail": {
-      "title": "Conversation",
-      "empty": "No interactions for this post yet.",
+    "dashboard": {
+      "connections": "Connections",
+      "connected": "Connected",
+      "disconnected": "Not configured",
+      "ready": "Ready",
+      "lastPoll": "Last polled",
+      "lastError": "Error",
+      "itemsCollected": "items collected",
+      "itemsReceived": "items received",
+      "mastodonHint": "Set MASTODON_ACCESS_TOKEN and MASTODON_URL to enable",
+      "blueskyHint": "Set BLUESKY_IDENTIFIER and BLUESKY_PASSWORD to enable",
+      "webhookTitle": "Webhook / Ingest",
+      "webhookHint": "External services can POST webmentions to the ingest endpoint",
+      "stats": "Statistics",
+      "totalItems": "Total items",
       "replies": "Replies",
       "likes": "Likes",
       "reposts": "Reposts",
-      "mentions": "Mentions"
+      "pollNow": "Poll Now",
+      "recentActivity": "Recent Activity",
+      "empty": "No interactions yet. Configure platform credentials or send webmentions to the ingest endpoint."
     },
     "source": {
       "webmention": "Webmention",

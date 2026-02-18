@@ -1,14 +1,16 @@
 {
   "name": "@rmdes/indiekit-endpoint-conversations",
-  "version": "1.0.0",
-  "description": "Conversation aggregation endpoint for Indiekit. Unified cross-protocol conversation views with Bridgy-primary webmention ingestion and optional direct API polling.",
+  "version": "2.0.0",
+  "description": "Conversation aggregation endpoint for Indiekit. Backend enrichment service that polls Mastodon/Bluesky notifications and serves JF2-compatible data for the interactions page.",
   "keywords": [
     "indiekit",
     "indiekit-plugin",
     "indieweb",
     "conversations",
     "webmention",
-    "textcasting"
+    "textcasting",
+    "mastodon",
+    "bluesky"
   ],
   "homepage": "https://github.com/rmdes/indiekit-endpoint-conversations",
   "author": {
@@ -36,12 +38,7 @@
   },
   "dependencies": {
     "@indiekit/error": "^1.0.0-beta.25",
-    "@indiekit/frontend": "^1.0.0-beta.25",
-    "express": "^5.0.0"
-  },
-  "optionalDependencies": {
-    "masto": "^7.0.0",
-    "@atproto/api": "^0.13.0"
+    "@indiekit/frontend": "^1.0.0-beta.25"
   },
   "publishConfig": {
     "access": "public"

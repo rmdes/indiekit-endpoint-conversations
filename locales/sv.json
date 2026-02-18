@@ -1,0 +1,32 @@
+{
+  "conversations": {
+    "title": "Konversationer",
+    "dashboard": {
+      "connections": "Anslutningar",
+      "connected": "Ansluten",
+      "disconnected": "Inte konfigurerad",
+      "ready": "Redo",
+      "lastPoll": "Senaste polling",
+      "lastError": "Fel",
+      "itemsCollected": "objekt insamlade",
+      "itemsReceived": "objekt mottagna",
+      "mastodonHint": "Ange MASTODON_ACCESS_TOKEN och MASTODON_URL f\u00f6r att aktivera",
+      "blueskyHint": "Ange BLUESKY_IDENTIFIER och BLUESKY_PASSWORD f\u00f6r att aktivera",
+      "webhookTitle": "Webhook / Inmatning",
+      "webhookHint": "Externa tj\u00e4nster kan skicka webmentions till inmatningsendpointen",
+      "stats": "Statistik",
+      "totalItems": "Totalt antal objekt",
+      "replies": "Svar",
+      "likes": "Gilla-markeringar",
+      "reposts": "Delningar",
+      "pollNow": "Polla nu",
+      "recentActivity": "Senaste aktivitet",
+      "empty": "Inga interaktioner \u00e4nnu. Konfigurera plattformsuppgifter eller skicka webmentions till inmatningsendpointen."
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky"
+    }
+  }
+}

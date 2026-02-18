@@ -1,0 +1,32 @@
+{
+  "conversations": {
+    "title": "Conversaties",
+    "dashboard": {
+      "connections": "Verbindingen",
+      "connected": "Verbonden",
+      "disconnected": "Niet geconfigureerd",
+      "ready": "Gereed",
+      "lastPoll": "Laatste peiling",
+      "lastError": "Fout",
+      "itemsCollected": "items verzameld",
+      "itemsReceived": "items ontvangen",
+      "mastodonHint": "Stel MASTODON_ACCESS_TOKEN en MASTODON_URL in om te activeren",
+      "blueskyHint": "Stel BLUESKY_IDENTIFIER en BLUESKY_PASSWORD in om te activeren",
+      "webhookTitle": "Webhook / Opname",
+      "webhookHint": "Externe diensten kunnen webmentions naar het opname-eindpunt sturen",
+      "stats": "Statistieken",
+      "totalItems": "Totaal items",
+      "replies": "Reacties",
+      "likes": "Likes",
+      "reposts": "Reposts",
+      "pollNow": "Nu peilen",
+      "recentActivity": "Recente activiteit",
+      "empty": "Nog geen interacties. Configureer platformreferenties of stuur webmentions naar het opname-eindpunt."
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky"
+    }
+  }
+}
