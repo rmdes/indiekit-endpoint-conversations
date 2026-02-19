@@ -106,12 +106,17 @@ export default class ConversationsEndpoint {
         (process.env.BLUESKY_IDENTIFIER || process.env.BLUESKY_HANDLE) &&
         process.env.BLUESKY_PASSWORD;
 
-      if (hasMastodon || hasBluesky) {
+      // ActivityPub: auto-detect from shared collection registry
+      // The AP endpoint registers ap_activities via Indiekit.addCollection()
+      const hasActivityPub = Indiekit.collections.has("ap_activities");
+
+      if (hasMastodon || hasBluesky || hasActivityPub) {
         // Store detected platforms for dashboard status
         Indiekit.config.application.conversations = {
           ...this.options,
           mastodonEnabled: !!hasMastodon,
           blueskyEnabled: !!hasBluesky,
+          activitypubEnabled: !!hasActivityPub,
         };
 
         import("./lib/polling/scheduler.js")
