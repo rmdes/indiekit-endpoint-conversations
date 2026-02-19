@@ -1,6 +1,6 @@
 {
   "name": "@rmdes/indiekit-endpoint-conversations",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Conversation aggregation endpoint for Indiekit. Backend enrichment service that polls Mastodon/Bluesky notifications and serves JF2-compatible data for the interactions page.",
   "keywords": [
     "indiekit",

@@ -106,30 +106,29 @@ export default class ConversationsEndpoint {
         (process.env.BLUESKY_IDENTIFIER || process.env.BLUESKY_HANDLE) &&
         process.env.BLUESKY_PASSWORD;
 
-      // ActivityPub: auto-detect from shared collection registry
-      // The AP endpoint registers ap_activities via Indiekit.addCollection()
-      const hasActivityPub = Indiekit.collections.has("ap_activities");
+      // Store detected platforms for dashboard status
+      // Note: ActivityPub detection happens at poll time (not init time)
+      // because the AP endpoint may register its collections after this
+      // plugin. The scheduler updates activitypubEnabled dynamically.
+      Indiekit.config.application.conversations = {
+        ...this.options,
+        mastodonEnabled: !!hasMastodon,
+        blueskyEnabled: !!hasBluesky,
+        activitypubEnabled: false,
+      };
 
-      if (hasMastodon || hasBluesky || hasActivityPub) {
-        // Store detected platforms for dashboard status
-        Indiekit.config.application.conversations = {
-          ...this.options,
-          mastodonEnabled: !!hasMastodon,
-          blueskyEnabled: !!hasBluesky,
-          activitypubEnabled: !!hasActivityPub,
-        };
-
-        import("./lib/polling/scheduler.js")
-          .then(({ startPolling }) => {
-            startPolling(Indiekit, this.options);
-          })
-          .catch((error) => {
-            console.error(
-              "[Conversations] Polling scheduler failed to start:",
-              error.message,
-            );
-          });
-      }
+      // Always start polling — the scheduler detects available sources
+      // at runtime (Mastodon/Bluesky from env vars, AP from collections)
+      import("./lib/polling/scheduler.js")
+        .then(({ startPolling }) => {
+          startPolling(Indiekit, this.options);
+        })
+        .catch((error) => {
+          console.error(
+            "[Conversations] Polling scheduler failed to start:",
+            error.message,
+          );
+        });
     }
   }
 }
