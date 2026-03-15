@@ -81,6 +81,7 @@ export default class ConversationsEndpoint {
     // Register MongoDB collections
     Indiekit.addCollection("conversation_items");
     Indiekit.addCollection("conversation_state");
+    Indiekit.addCollection("nodeinfo_cache");
 
     Indiekit.addEndpoint(this);
 
