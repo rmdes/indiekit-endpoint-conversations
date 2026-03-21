@@ -10,10 +10,12 @@
       "lastError": "Fel",
       "itemsCollected": "objekt insamlade",
       "itemsReceived": "objekt mottagna",
-      "mastodonHint": "Ange MASTODON_ACCESS_TOKEN och MASTODON_URL f\u00f6r att aktivera",
-      "blueskyHint": "Ange BLUESKY_IDENTIFIER och BLUESKY_PASSWORD f\u00f6r att aktivera",
+      "mastodonHint": "Ange MASTODON_ACCESS_TOKEN och MASTODON_URL för att aktivera",
+      "blueskyHint": "Ange BLUESKY_IDENTIFIER och BLUESKY_PASSWORD för att aktivera",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "Aktiveras automatiskt när ActivityPub-endpointen tar emot interaktioner",
       "webhookTitle": "Webhook / Inmatning",
-      "webhookHint": "Externa tj\u00e4nster kan skicka webmentions till inmatningsendpointen",
+      "webhookHint": "Externa tjänster kan skicka webmentions till inmatningsendpointen",
       "stats": "Statistik",
       "totalItems": "Totalt antal objekt",
       "replies": "Svar",
@@ -21,12 +23,13 @@
       "reposts": "Delningar",
       "pollNow": "Polla nu",
       "recentActivity": "Senaste aktivitet",
-      "empty": "Inga interaktioner \u00e4nnu. Konfigurera plattformsuppgifter eller skicka webmentions till inmatningsendpointen."
+      "empty": "Inga interaktioner ännu. Konfigurera plattformsuppgifter eller skicka webmentions till inmatningsendpointen."
     },
     "source": {
       "webmention": "Webmention",
       "mastodon": "Mastodon",
-      "bluesky": "Bluesky"
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
     }
   }
 }

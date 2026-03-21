@@ -12,6 +12,8 @@
       "itemsReceived": "Elemente empfangen",
       "mastodonHint": "MASTODON_ACCESS_TOKEN und MASTODON_URL setzen zum Aktivieren",
       "blueskyHint": "BLUESKY_IDENTIFIER und BLUESKY_PASSWORD setzen zum Aktivieren",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "Automatisch aktiviert, wenn der ActivityPub-Endpunkt Interaktionen empfängt",
       "webhookTitle": "Webhook / Eingang",
       "webhookHint": "Externe Dienste k\u00f6nnen Webmentions an den Eingangsendpunkt senden",
       "stats": "Statistiken",
@@ -26,7 +28,8 @@
     "source": {
       "webmention": "Webmention",
       "mastodon": "Mastodon",
-      "bluesky": "Bluesky"
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
     }
   }
 }

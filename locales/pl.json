@@ -1,0 +1,35 @@
+{
+  "conversations": {
+    "title": "Konwersacje",
+    "dashboard": {
+      "connections": "Połączenia",
+      "connected": "Połączono",
+      "disconnected": "Nie skonfigurowano",
+      "ready": "Gotowe",
+      "lastPoll": "Ostatnie odpytanie",
+      "lastError": "Błąd",
+      "itemsCollected": "elementów zebranych",
+      "itemsReceived": "elementów otrzymanych",
+      "mastodonHint": "Ustaw MASTODON_ACCESS_TOKEN i MASTODON_URL, aby włączyć",
+      "blueskyHint": "Ustaw BLUESKY_IDENTIFIER i BLUESKY_PASSWORD, aby włączyć",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "Włączane automatycznie, gdy endpoint ActivityPub odbiera interakcje",
+      "webhookTitle": "Webhook / Ingest",
+      "webhookHint": "Zewnętrzne usługi mogą wysyłać webmention do endpointu ingest",
+      "stats": "Statystyki",
+      "totalItems": "Łączna liczba elementów",
+      "replies": "Odpowiedzi",
+      "likes": "Polubienia",
+      "reposts": "Udostępnienia",
+      "pollNow": "Odpytaj teraz",
+      "recentActivity": "Ostatnia aktywność",
+      "empty": "Brak interakcji. Skonfiguruj dane uwierzytelniające platformy lub wyślij webmention do endpointu ingest."
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
+    }
+  }
+}

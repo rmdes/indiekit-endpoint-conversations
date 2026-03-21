@@ -3,30 +3,33 @@
     "title": "Conversations",
     "dashboard": {
       "connections": "Connexions",
-      "connected": "Connect\u00e9",
-      "disconnected": "Non configur\u00e9",
-      "ready": "Pr\u00eat",
+      "connected": "Connecté",
+      "disconnected": "Non configuré",
+      "ready": "Prêt",
       "lastPoll": "Dernier sondage",
       "lastError": "Erreur",
-      "itemsCollected": "\u00e9l\u00e9ments collect\u00e9s",
-      "itemsReceived": "\u00e9l\u00e9ments re\u00e7us",
-      "mastodonHint": "D\u00e9finir MASTODON_ACCESS_TOKEN et MASTODON_URL pour activer",
-      "blueskyHint": "D\u00e9finir BLUESKY_IDENTIFIER et BLUESKY_PASSWORD pour activer",
-      "webhookTitle": "Webhook / Ing\u00e9rer",
-      "webhookHint": "Les services externes peuvent envoyer des webmentions au point d'entr\u00e9e",
+      "itemsCollected": "éléments collectés",
+      "itemsReceived": "éléments reçus",
+      "mastodonHint": "Définir MASTODON_ACCESS_TOKEN et MASTODON_URL pour activer",
+      "blueskyHint": "Définir BLUESKY_IDENTIFIER et BLUESKY_PASSWORD pour activer",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "Activé automatiquement lorsque le point d'entrée ActivityPub reçoit des interactions",
+      "webhookTitle": "Webhook / Ingérer",
+      "webhookHint": "Les services externes peuvent envoyer des webmentions au point d'entrée",
       "stats": "Statistiques",
-      "totalItems": "Total des \u00e9l\u00e9ments",
-      "replies": "R\u00e9ponses",
+      "totalItems": "Total des éléments",
+      "replies": "Réponses",
       "likes": "J'aime",
       "reposts": "Repartages",
       "pollNow": "Sonder maintenant",
-      "recentActivity": "Activit\u00e9 r\u00e9cente",
-      "empty": "Aucune interaction pour le moment. Configurez les identifiants de plateforme ou envoyez des webmentions au point d'entr\u00e9e."
+      "recentActivity": "Activité récente",
+      "empty": "Aucune interaction pour le moment. Configurez les identifiants de plateforme ou envoyez des webmentions au point d'entrée."
     },
     "source": {
       "webmention": "Webmention",
       "mastodon": "Mastodon",
-      "bluesky": "Bluesky"
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
     }
   }
 }

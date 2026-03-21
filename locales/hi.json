@@ -1,0 +1,35 @@
+{
+  "conversations": {
+    "title": "वार्तालाप",
+    "dashboard": {
+      "connections": "कनेक्शन",
+      "connected": "कनेक्ट किया गया",
+      "disconnected": "कॉन्फ़िगर नहीं किया गया",
+      "ready": "तैयार",
+      "lastPoll": "अंतिम पोल",
+      "lastError": "त्रुटि",
+      "itemsCollected": "आइटम एकत्रित",
+      "itemsReceived": "आइटम प्राप्त",
+      "mastodonHint": "सक्रिय करने के लिए MASTODON_ACCESS_TOKEN और MASTODON_URL सेट करें",
+      "blueskyHint": "सक्रिय करने के लिए BLUESKY_IDENTIFIER और BLUESKY_PASSWORD सेट करें",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "ActivityPub एंडपॉइंट पर इंटरैक्शन प्राप्त होने पर स्वचालित रूप से सक्रिय होता है",
+      "webhookTitle": "Webhook / इनजेस्ट",
+      "webhookHint": "बाहरी सेवाएँ इनजेस्ट एंडपॉइंट पर वेबमेंशन भेज सकती हैं",
+      "stats": "आँकड़े",
+      "totalItems": "कुल आइटम",
+      "replies": "जवाब",
+      "likes": "पसंद",
+      "reposts": "रीपोस्ट",
+      "pollNow": "अभी पोल करें",
+      "recentActivity": "हाल की गतिविधि",
+      "empty": "अभी तक कोई इंटरैक्शन नहीं। प्लेटफ़ॉर्म क्रेडेंशियल कॉन्फ़िगर करें या इनजेस्ट एंडपॉइंट पर वेबमेंशन भेजें।"
+    },
+    "source": {
+      "webmention": "Webmention",
+      "mastodon": "Mastodon",
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
+    }
+  }
+}

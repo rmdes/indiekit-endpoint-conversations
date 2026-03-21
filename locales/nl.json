@@ -12,6 +12,8 @@
       "itemsReceived": "items ontvangen",
       "mastodonHint": "Stel MASTODON_ACCESS_TOKEN en MASTODON_URL in om te activeren",
       "blueskyHint": "Stel BLUESKY_IDENTIFIER en BLUESKY_PASSWORD in om te activeren",
+      "activitypubTitle": "ActivityPub",
+      "activitypubHint": "Automatisch ingeschakeld wanneer het ActivityPub-eindpunt interacties ontvangt",
       "webhookTitle": "Webhook / Opname",
       "webhookHint": "Externe diensten kunnen webmentions naar het opname-eindpunt sturen",
       "stats": "Statistieken",
@@ -26,7 +28,8 @@
     "source": {
       "webmention": "Webmention",
       "mastodon": "Mastodon",
-      "bluesky": "Bluesky"
+      "bluesky": "Bluesky",
+      "activitypub": "ActivityPub"
     }
   }
 }
