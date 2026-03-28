@@ -37,7 +37,7 @@
         </p>
         {% endif %}
         <p style="font-size: 0.85em; margin: 0.25rem 0">
-          {{ platformCounts.mastodon or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
+          {{ channelCounts.mastodon_api or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
         </p>
       {% else %}
         <p style="font-size: 0.85em; color: #6b7280; margin: 0.25rem 0">
@@ -71,7 +71,7 @@
         </p>
         {% endif %}
         <p style="font-size: 0.85em; margin: 0.25rem 0">
-          {{ platformCounts.bluesky or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
+          {{ channelCounts.bluesky_api or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
         </p>
       {% else %}
         <p style="font-size: 0.85em; color: #6b7280; margin: 0.25rem 0">
@@ -105,7 +105,7 @@
         </p>
         {% endif %}
         <p style="font-size: 0.85em; margin: 0.25rem 0">
-          {{ platformCounts.activitypub or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
+          {{ channelCounts.activitypub_inbox or 0 }} {{ __("conversations.dashboard.itemsCollected") }}
         </p>
       {% else %}
         <p style="font-size: 0.85em; color: #6b7280; margin: 0.25rem 0">
@@ -130,7 +130,7 @@
         POST {{ baseUrl }}/ingest
       </code>
       <p style="font-size: 0.85em; margin: 0.25rem 0">
-        {{ platformCounts.webmention or 0 }} {{ __("conversations.dashboard.itemsReceived") }}
+        {{ channelCounts.webhook or 0 }} {{ __("conversations.dashboard.itemsReceived") }}
       </p>
     </div>
   </div>
