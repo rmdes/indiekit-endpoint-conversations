@@ -1,6 +1,6 @@
 {
   "name": "@rmdes/indiekit-endpoint-conversations",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Conversation aggregation endpoint for Indiekit. Backend enrichment service that polls Mastodon/Bluesky notifications and serves JF2-compatible data for the interactions page.",
   "keywords": [
     "indiekit",
@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "@indiekit/error": "^1.0.0-beta.25",
-    "@indiekit/frontend": "^1.0.0-beta.25"
+    "@indiekit/frontend": "^1.0.0-beta.25",
+    "@rmdes/indiekit-startup-gate": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

@@ -2,6 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import express from "express";
+import { waitForReady } from "@rmdes/indiekit-startup-gate";
 
 import { conversationsController } from "./lib/controllers/conversations.js";
 import { createIndexes } from "./lib/storage/conversation-items.js";
@@ -120,16 +121,25 @@ export default class ConversationsEndpoint {
 
       // Always start polling — the scheduler detects available sources
       // at runtime (Mastodon/Bluesky from env vars, AP from collections)
-      import("./lib/polling/scheduler.js")
-        .then(({ startPolling }) => {
-          startPolling(Indiekit, this.options);
-        })
-        .catch((error) => {
-          console.error(
-            "[Conversations] Polling scheduler failed to start:",
-            error.message,
-          );
-        });
+      this._stopGate = waitForReady(
+        () => {
+          import("./lib/polling/scheduler.js")
+            .then(({ startPolling }) => {
+              startPolling(Indiekit, this.options);
+            })
+            .catch((error) => {
+              console.error(
+                "[Conversations] Polling scheduler failed to start:",
+                error.message,
+              );
+            });
+        },
+        { label: "Conversations" },
+      );
     }
+  }
+
+  destroy() {
+    this._stopGate?.();
   }
 }
